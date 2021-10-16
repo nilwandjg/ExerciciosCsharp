@@ -128,7 +128,7 @@ namespace ExerciciosCsharp
                             }
                             else
                             {
-                                Console.WriteLine("\nSReprovado!\nSua média foi de {0}.", string.Format("{0:0.0}", novaMedia));
+                                Console.WriteLine("\nReprovado!\nSua média foi de {0}.", string.Format("{0:0.0}", novaMedia));
                             }
                         }
                         break;
@@ -252,6 +252,7 @@ namespace ExerciciosCsharp
                         }
 
                         //Saída:
+                        Console.Clear();
                         Console.WriteLine("\nVocê digitou:");
                         Console.WriteLine("{0} cachorro(s);\n{1} gato(s);\n{2} peixe(s).", cachorroContador, gatoContador, peixeContador);
 
