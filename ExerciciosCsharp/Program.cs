@@ -31,11 +31,11 @@ namespace ExerciciosCsharp
                         Console.WriteLine("Digite o seu peso (Kg):");
 
                         peso = Convert.ToDouble(Console.ReadLine());
-                        Console.WriteLine("Digite a sua altura (centímetros):");
+                        Console.WriteLine("Digite a sua altura (em centímetros):");
 
                         altura = Convert.ToDouble(Console.ReadLine());
+                        
                         altura /= 100;
-
                         imc = peso / (altura * altura);
 
                         Console.WriteLine("\nSeu IMC é {0}.", string.Format("{0:0.00}", imc));
@@ -277,11 +277,11 @@ namespace ExerciciosCsharp
                     continuar = false;
                 } else
                 {
-                    Console.WriteLine("Desculpe, essa opção não existe.");
+                    continuar = false;
+                    Console.WriteLine("\nDesculpe, essa opção não existe.");
                 }
-
-            } while (continuar == true);
-            Console.WriteLine("Fim do programa.");
+           } while (continuar == true);
+            Console.WriteLine("Fim do programa."); 
         }
     }
 }
